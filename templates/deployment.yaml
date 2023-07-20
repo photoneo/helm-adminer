@@ -39,7 +39,7 @@ spec:
             - name: ADMINER_DESIGN
               value: {{ .Values.config.design }}
             - name: ADMINER_DEFAULT_SERVER
-              value: {{ .Values.config.externalserver }}
+              value: {{ tpl .Values.config.externalserver . }}
           {{- with .Values.resources }}
           resources:
             {{- toYaml . | nindent 12 }}
