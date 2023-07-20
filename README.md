@@ -62,7 +62,7 @@ The following table lists the configurable parameters of the Adminer chart and t
 | **Config**                                                                                                                                |
 | `config.plugins`                  | List of plugins to install. You can find the list of plugins on [GitHub](https://github.com/vrana/adminer/tree/master/plugins)| ``|
 | `config.design`                   | A bundled design to use. You can find the list of designs on [GitHub](https://github.com/vrana/adminer/tree/master/designs)| ``|
-| `config.externalserver`           | The default host                                                        | ``                          |
+| `config.externalserver`           | The default host. Evaluated as a template                               | ``                          |
 | **Service**                                                                                                                               |
 | `service.type`                    | Service type                                                            | `NodePort`                  |
 | `service.port`                    | The service port                                                        | `80`                        |
